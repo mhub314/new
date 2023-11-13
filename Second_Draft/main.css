@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -25,7 +25,7 @@ nav {
     background-color: black;
     position: fixed;
     top: 0px;
-    height: 60px;
+    height: 100px;
 }
 
 .nav-container {
@@ -33,6 +33,28 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    height: 300px;
+    background-color: black;
+    background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgb(0,0,0) 40%);
+}
+
+.title-text {
+    font-size: 2em;
+    color: white;
+    margin-top: -70px;
+    margin-left: 475px;
+    text-shadow: -2px 2px 24px #8c1616,
+                  2px 2px 0 #8c1616,
+                  2px -2px 0 #8c1616,
+                  -2px -2px 0 #8c1616;
+}
+
+.nav-link {
+    color: white;
+    text-shadow: -2px 2px 24px #8c1616,
+                  2px 2px 0 #8c1616,
+                  2px -2px 0 #8c1616,
+                  -2px -2px 0 #8c1616;
 }
 
 .navbar-list {
@@ -49,13 +71,25 @@ nav {
     height: 100%;
 }
 
+.details {
+   margin-left: 850px; 
+   color:rgb(169, 37, 37);
+   font-size: 1em;
+}
+
+.tickets {
+    padding-left:80px;
+    text-decoration: underline;
+    color: red;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
 a:hover {
-    color: rgb(69, 79, 73);
+    color:white;
 }
 
 .background {
@@ -63,106 +97,98 @@ a:hover {
     width: 100%;
     position: fixed;
     margin-top: -100px;
+    height: 1000px;
 }
 
 .welcome {
     z-index: 1;
-    height: 12em;
+    height: 19em;
+    margin-top: -150px;
     justify-content: center;
     align-items: center;
+    color: black;
+    display: flex;
+    font-size: 3em;
+    text-shadow:-1px 1px 2px rgb(53, 117, 160),
+                1px 1px 0 rgb(53, 117, 160),
+                1px -1px 0 rgb(53, 117, 160),
+                -1px -1px 0 rgb(53, 117, 160); 
+}
+
+.feature-details {
     color: white;
-    display: flex;
-    font-size: 2em;
-    text-shadow:-1px 1px 2px #000,
-                1px 1px 0 #000,
-                1px -1px 0 #000,
-                -1px -1px 0 #000; 
-}
-
-.features {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    padding-bottom: 20px;
-}
-
-.wrap-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.wrapper {
+    list-style-type: none;
     display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
-    grid-gap: 60px;
-}
-
-.box {
-    max-width: 300px;
-    height: auto;
-    background-color: black;
-}
-
-footer {
-    object-fit: cover;
-    max-width: 300px;
-    height: auto;
-}
-
-.wrap-container-1 {
-    display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
-    grid-gap: 60px;
-    background-color: black;
-    color: white;
-}
-
-.bottom {
-    background-color: black;
-    color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-    justify-content: space-evenly;
-}
-
-.map {
-    width: 250px;
-    padding: 2%;
-    padding-left: 100px;
-}
-
-.mapimg {
     width: 200px;
 }
 
-.foot-info {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    font: 0.6em;
+.heading {
+    padding-left: 440px;
+    color: white;
 }
 
-.footshows {
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    padding-top: 100px;
+    padding-left: 350px;
+    grid-gap: 100px;
+}
+
+.grid-item {
+    width: 250px;
+}
+
+.head {
+    color: white;
+}
+
+.upcoming-shows {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 150px;
+}
+
+.grid-piece {
+    padding: 100px;
+}
+
+.upcoming {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    font: 0.6em;
+    padding-left: 120px;
+    height: 800px;
+    padding-top: 200px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(0,0,0) 40%);
+}
+
+.footer {
+    background-color: black;
+    margin-bottom: 0px;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 300px;
+    color: white;
+    padding: 100px;
+}
+
+.info-header {
+    font-size: 2em;
 }
 
 .social {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    font: 0.6em;
+    font-size: 2em;
+}
+
+.mapimg {
+    width: 250px;
+}
+
+.poster {
+    width: 200px;
 }
 
 
